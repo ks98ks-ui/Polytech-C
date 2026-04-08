@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="fist/fist.vcxproj" Id="a85f1a8f-a425-4ee6-b1c3-8c78bf7243b4" />
+</Solution>
