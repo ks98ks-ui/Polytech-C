@@ -5,14 +5,17 @@
 
 int main()
 {
-	char c[10];
-	int i;
-	for (i = 0; i < 10; i++) {
-		scanf(" %c", &c[i]);
-	}
-	for (i = 0; i < 10; i++) {
-		printf("%c", c[i]);
-	}
+    int num[100];
+    int i;
+    int count = 0;
+    for (i = 0; i < 100; i++) {
+        scanf(" %d", &num[i]);
+        if (num[i] == -1) break;
+        count++;
+    }
+    for (i = count - 3; i < count; i++) {
+        printf("%d ", num[i]);
+    }
 }
 //{
 //	int i, j;
@@ -45,8 +48,18 @@ int main()
 //			}printf("\n");
 //			}
 //}
-
-
+//int num[100];
+//int i;
+//int count = 0;
+//for (i = 0; i < 100; i++) {
+//    scanf(" %d", &num[i]);
+//    if (num[i] == -1) break;
+//    count++;
+//}
+//for (i = count - 3; i < count; i++) {
+//    printf("%d ", num[i]);
+//}
+//
 
 
 

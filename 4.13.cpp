@@ -1,21 +1,22 @@
 ﻿// fist.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <stdio.h>
-
 int main()
 {
     int num[100];
     int i;
-    int count = 0;
+    int max = 0;
+
     for (i = 0; i < 100; i++) {
-        scanf(" %d", &num[i]);
-        if (num[i] == -1) break;
-        count++;
+        scanf("%d", &num[i]);
+        if (num[i] == 999) break;
     }
-    for (i = count - 3; i < count; i++) {
-        printf("%d ", num[i]);
-    }
+    
+
+   
+    printf("max : %d \n", max);
+    return 0;
+
 }
 //{
 //	int i, j;

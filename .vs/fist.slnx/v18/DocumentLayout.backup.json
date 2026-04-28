@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\work\\fist\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A85F1A8F-A425-4EE6-B1C3-8C78BF7243B4}|fist\\fist.vcxproj|C:\\work\\fist\\fist\\fist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A85F1A8F-A425-4EE6-B1C3-8C78BF7243B4}|fist\\fist.vcxproj|solutionrelative:fist\\fist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A85F1A8F-A425-4EE6-B1C3-8C78BF7243B4}|fist\\fist.vcxproj|C:\\work\\fist\\fist\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A85F1A8F-A425-4EE6-B1C3-8C78BF7243B4}|fist\\fist.vcxproj|solutionrelative:fist\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "fist.cpp",
-              "DocumentMoniker": "C:\\work\\fist\\fist\\fist.cpp",
-              "RelativeDocumentMoniker": "fist\\fist.cpp",
-              "ToolTip": "C:\\work\\fist\\fist\\fist.cpp",
-              "RelativeToolTip": "fist\\fist.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\work\\fist\\fist\\test.cpp",
+              "RelativeDocumentMoniker": "fist\\test.cpp",
+              "ToolTip": "C:\\work\\fist\\fist\\test.cpp*",
+              "RelativeToolTip": "fist\\test.cpp*",
+              "ViewState": "AgIAAMMBAAAAAAAAAAAUwNEBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-05T00:24:30.498Z",
+              "WhenOpened": "2026-04-23T02:05:38.725Z",
               "EditorCaption": ""
             }
           ]
