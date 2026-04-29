@@ -458,6 +458,7 @@ int main()
 //}
 
 // 함수 자가진단 1번
+<<<<<<< HEAD
 
 //void c();
 //int main()
@@ -695,3 +696,20 @@ int main()
 //        printf("\n");
 //    }
 //}
+=======
+void c();
+int main()
+{
+	int i;
+	int num;
+	scanf("%d", &num);
+	for (i = 0; i < num; i++) {
+		c();
+	}
+}
+void c() 
+{
+	puts("~!@#$^&*()_+|");
+}
+
+>>>>>>> 04cabe48cbb85782fa19b1c0ed2f53e3aaf95592
