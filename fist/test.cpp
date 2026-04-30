@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+//int main()
 //{
 //	char c[10];
 //	int i;
@@ -458,9 +458,9 @@ int main()
 //}
 
 // 함수 자가진단 1번
-<<<<<<< HEAD
 
 //void c();
+//
 //int main()
 //{
 //	int i;
@@ -513,12 +513,129 @@ int main()
 
 // 함수 자가진단 4번
 
+//void c(int x, int y, int z)
+//{
+//    if (x > y && x > z) {
+//        printf("%d", x);
+//    }
+//    else if (y > z) {
+//        printf("%d", y);
+//    }
+//    else
+//        printf("%d", z);
+//}
+//int main()
+//{
+//    int num, num2, num3;
+//    scanf("%d %d %d", &num, &num2, &num3);
+//    c(num, num2, num3);
+//}
 
 // 함수 자가진단 5번
 
+//int num(int x, int y)
+//{
+//    int num2 = 1;
+//    for (int i = 1; i <= y; i++) {
+//        num2 = num2 * x;
+//    }
+//    return num2;
+//}
+//int main()
+//{
+//    int n, n2;
+//    scanf("%d %d", &n, &n2);
+//    printf("%d", num(n, n2));
+//}
 
+// 함수 자가진단 6번
 
+//int gesan(int x, int y, char op)
+//{
+//    if (op == '+') {
+//        return x + y;
+//    }
+//    else if (op == '-') {
+//        return x - y;
+//    }
+//    else if (op == '*') {
+//        return x * y;
+//    }
+//    else if (op == '/')
+//    {
+//        return x / y;
+//    }
+//    else
+//        return 0;
+//}
+//
+//int main()
+//{
+//    int a, b;
+//    char c;
+//    scanf("%d %c %d", &a, &c, &b);
+//    printf("%d %c %d = %d\n", a, c, b, gesan(a, b, c));
+//}
 //형성평가1번
+
+// 함수 자가진단 7번
+
+//void gesan(int& x, int& y)
+//{
+//    int tmp;
+//    if (x < y) {
+//        tmp = x;
+//        x = y;
+//        y = tmp;
+//    }
+//    printf("%d ", y * 2);
+//    printf("%d", x / 2);
+//
+//}
+//int main()
+//{
+//    int num, num2;
+//    scanf("%d %d", &num, &num2);
+//    gesan(num, num2);
+//
+//}
+
+// 함수 자가진단 8번
+
+//void input(int &x, int &y) 
+//{
+//   scanf("%d %d", &x, &y);
+//   int tmp = 0;
+//   if (x > y) {
+//        tmp = x;
+//        x = y;
+//        y = tmp;
+//
+//    }
+//}
+//
+//void output(int i)
+//{
+//    int j;
+//    printf("==%ddan== \n", i);
+//    for (j = 1; j < 9; j++) {
+//        printf("%d * %d = %2d \n", i, j, i * j);
+//    }
+//    printf("\n");
+//        
+//}
+//
+//int main()
+//{
+//    int a, b, i;
+//    input(a, b);
+//    for (i = a; i <= b; i++) {
+//        output(i);
+//    }
+//    return 0;
+//}
+
+//형성평가 1번
  
 //{
 //    int num, i;
@@ -597,6 +714,20 @@ int main()
 
 //형성평가5번
 
+//{
+//    int score[4][3] = { {0} };
+//
+//    int i, j;
+//
+//    for (i = 0; i < 4; i++) {
+//        int sum = 0;
+//        for (j = 0; j < 3; j++) {
+//            scanf("%d", &score[i][j]);
+//            sum += score[i][j];
+//        }
+//        printf("%dclass : %d \n", i + 1, sum);
+//    }
+//}
 
 //형성평가6번
    
@@ -678,6 +809,30 @@ int main()
 //    printf("%d", sum / 8);
 //}
 
+//형성평가9번
+
+//{
+//    int num;
+//    int arr[11][11] = { {0} };
+//    int i, j;
+//
+//    scanf("%d", &num);
+//    arr[1][1] = 1;
+//
+//    for (i = 2; i <= num; i++) {
+//        for (j = 1; j <= i; j++) {
+//            arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+//        }
+//    }
+//    for (i = num; i >= 1; i--) {
+//        for (j = 1; j <= i; j++) {
+//            printf("%d ", arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+//
+//}
+ 
 //형성평가10번
 
 //{
@@ -696,20 +851,115 @@ int main()
 //        printf("\n");
 //    }
 //}
-=======
-void c();
-int main()
-{
-	int i;
-	int num;
-	scanf("%d", &num);
-	for (i = 0; i < num; i++) {
-		c();
-	}
-}
-void c() 
-{
-	puts("~!@#$^&*()_+|");
-}
 
->>>>>>> 04cabe48cbb85782fa19b1c0ed2f53e3aaf95592
+//함수 형성평가 1
+
+//void c()
+//{
+//    puts("@@@@@@@@@@");
+//}
+//
+//int main()
+//{
+//    printf("first \n");
+//    c();
+//    printf("second \n");
+//    c();
+//    printf("third \n");
+//    c();
+//}
+
+//함수 형성평가 2
+
+//void hap(int num)
+//{
+//
+//    int sum = 0;
+//    int i;
+//    for (i = 1; i <= num; i++) {
+//        sum += i;
+//    }
+//    printf("%d", sum);
+//}
+//
+//int main()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    hap(num);
+//}
+
+//함수 형성평가 3
+
+//void arr(int num)
+//{
+//    int i, j;
+//    for (i = 1; i <= num; i++) {
+//        int su = 1;
+//        for (j = 1; j <= num; j++) {
+//            su += i;
+//            printf("%d ", su-1);
+//        }
+//        printf("\n");
+//    }
+//
+//}
+//
+//int main()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    arr(num);
+//
+//}
+
+//함수 형성평가 4
+
+//void gop(int x, int y)
+//{
+//    int su = 0;
+//    su = (x * x) - (y * y);
+//
+//    if (su < 0) {
+//        su *= -1;
+//    }
+//    printf("%d", su);
+//}
+//
+//
+//int main()
+//{
+//    int num, num2;
+//    scanf("%d %d", &num, &num2);
+//    gop(num, num2);
+//
+//}
+
+//함수 형성평가 5
+
+//void hap()
+//{
+//    int i, j;
+//    int score[4][4] = { {0} };
+//    for (i = 0; i < 3; i++) {
+//        for (j = 0; j < 3; j++) {
+//            scanf("%d", &score[i][j]);
+//            score[i][3] += score[i][j];
+//            score[3][j] += score[i][j];
+//            score[3][3] += score[i][j];
+//        }
+//    }
+//    for (i = 0; i < 4; i++) {
+//        for (j = 0; j < 4; j++) {
+//            printf("%d ", score[i][j]);
+//        }
+//        printf("\n");
+//    } 
+//}
+//
+//int main()
+//{
+//    hap();
+//    return 0;
+//}
+
