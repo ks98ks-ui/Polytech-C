@@ -963,3 +963,388 @@
 //    return 0;
 //}
 
+//함수2 자가진단1
+
+//void input(int a[], int cnt)
+//{
+//    int i;
+//    for (i = 0; i < cnt; i++) {
+//        scanf("%d", &a[i]);
+//    }
+//}
+//
+//void output(int a[], int cnt)
+//{
+//    int i;
+//    for (i = cnt - 1; i >= 0; i--) {
+//        printf("%d ", a[i]);
+//    }
+//    printf("\n");
+//}
+//
+//void swap(int &x, int &y)
+//{
+//    int tmp = x;
+//    x = y;
+//    y = tmp;
+//}
+//
+//void sort(int a[], int cnt)
+//{
+//    int i, j;
+//    for (i = 0; i < cnt - 1; i++) {
+//        for (j = i + 1; j < cnt; j++) {
+//            if (a[i] > a[j]) {
+//                swap(a[i], a[j]);
+//            }
+//        }
+//    }
+//}
+//
+//int main()
+//{
+//    int n;
+//    scanf("%d", &n);
+//    int arr[10];
+//
+//    input(arr, n);
+//    sort(arr, n);
+//    output(arr, n);
+//
+//    return 0;
+//}
+
+//함수2 자가진단2
+
+//void input(int a[], int cnt)
+//{
+//    int i;
+//    for (i = 0; i < cnt; i++) {
+//        scanf("%d", &a[i]);
+//    }
+//}
+//
+//int pass(int a[], int cnt)
+//{
+//    int i, j;
+//    i = a[0];
+//    j = a[1];
+//    int n[13] = { 0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+//    if (i > 12 || i < 1) return false;
+//    if (j<1 || j>n[i]) return false;
+//    return true;
+//}
+//int main()
+//{
+//    int n[2];
+//    input(n, 2);
+//    if (pass(n, 2)) {
+//        printf("OK!");
+//    }
+//    else {
+//        printf("BAD!");
+//    }
+//}
+
+//함수2 자가진단3
+
+//#include <stdlib.h>
+//#include <math.h>
+//
+//int main()
+//{
+//    int a, b;
+//    double c, d;
+//    scanf("%d %d", &a, &b);
+//    scanf("%lf %lf", &c, &d);
+//
+//
+//
+//    printf("%d \n", abs(a) > abs(b) ? a : b);
+//    printf("%.2f \n", fabs(c) < fabs(d) ? c : d);
+//}
+
+//함수2 자가진단4
+
+//#include <stdlib.h>
+//#include <math.h>
+//int main()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    printf("%.2f", sqrt(num / 3.14));
+//}
+
+//함수2 자가진단5
+
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main()
+//{
+//    double max, min;
+//    double n, n2, n3;
+//    scanf(" %lf %lf %lf", &n, &n2, &n3);
+//    max = n;
+//    if (n2 > max) max = n2;
+//    if (n3 > max) max = n3;
+//
+//    min = n;
+//    if (n2 < min) min = n2;
+//    if (n3 < min) min = n3;
+//
+//
+//    printf("%.f %.f %.f", ceil(max), floor(min), round(n + n2 + n3 - max - min));
+//
+//}
+
+//함수2 자가진단6
+
+//#define one 1
+//#define two 2
+//#define three 3
+//
+//int main()
+//{
+//    printf("%d + %d = %d \n", one, one, one + one);
+//    printf("%d + %d = %d \n", one, two, one + two);
+//    printf("%d + %d = %d \n", one, three, one + three);
+//    printf("%d + %d = %d \n", two, one, two + one);
+//    printf("%d + %d = %d \n", two, two, two + two);
+//    printf("%d + %d = %d \n", two, three, two + three);
+//    printf("%d + %d = %d \n", three, one, three + one);
+//    printf("%d + %d = %d \n", three, two, three + two);
+//    printf("%d + %d = %d \n", three, three, three + three);
+//
+//}
+
+//함수2 자가진단7
+
+//#define N 10
+//#define SWAP(x,y) {int z = x; x = y; y = z;}
+//
+//void input(int a[])
+//{
+//    int i;
+//    for (i = 0; i < N; i++) {
+//        scanf("%d", &a[i]);
+//    }
+//}
+//void output(int a[])
+//{
+//    int i;
+//    for (i = 0; i < N; i++) {
+//        printf("%d ", a[i]);
+//    }
+//    printf("\n");
+//}
+//
+//void sort(int a[])
+//{
+//    int i, j;
+//    for (i = 1; i < N; i++) {
+//        for (j = 0; j < N - i; j++) {
+//            if (a[j] < a[j + 1]) {
+//                SWAP(a[j], a[j + 1]);
+//            }
+//        }
+//        output(a);
+//        }
+//    
+//        
+//}
+//
+//int main()
+//{
+//    int arr[N];
+//
+//    input(arr);
+//    sort(arr);
+//    output(arr);
+//    return 0;
+//}
+
+//함수2 자가진단8
+
+//#define gesan(x,y)(x-y)*(x-y)
+//#define gesan2(x,y)(x+y)*(x+y)*(x+y)
+//
+//int main()
+//{
+//    int n, n2, n3, n4;
+//    scanf("%d %d", &n, &n2);
+//    n3 = gesan(n, n2);
+//    n4 = gesan2(n, n2);
+//
+//    printf("(%d - %d) ^ 2 = %d \n", n, n2, n3);
+//    printf("(%d + %d) ^ 3 = %d", n, n2, n4);
+//
+//}
+//함수 형성평가4
+
+//함수2 형성평가1
+
+//#define SWAP(x,y) {int z = x; x =y; y =z;}
+//void input(int a[], int cnt)
+//{
+//    int i;
+//    for (i = 0; i < cnt; i++) {
+//        scanf("%d", &a[i]);
+//    }
+//}
+//
+//void sort(int a[], int cnt)
+//{
+//    int i, j;
+//    for (i = 1; i < cnt; i++) {
+//        for (j = 0; j < cnt-i; j++) {
+//            if (a[j] < a[j + 1]) {
+//                SWAP(a[j], a[j + 1]);
+//            }
+//        }
+//    }
+//}
+//void output(int a[], int cnt)
+//{
+//    int i;
+//    for (i = 0; i < cnt; i++) {
+//        printf("%d ", a[i]);
+//    }
+//}
+//int main()
+//{
+//    int n;
+//    scanf("%d", &n);
+//    int arr[15];
+//    input(arr, n);
+//    sort(arr, n);
+//    output(arr, n);
+//    return 0;
+//}
+
+//함수2 형성평가2
+
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    double a, b;
+    double num = 0;
+    scanf("%lf %lf", &a, &b);
+
+    num = round(sqrt(a) - sqrt(b));
+    if (num <= 0) 
+        num *= -1;
+    
+    printf("%.f", num);
+
+}
+
+//함수2 형성평가3
+
+//#include <stdlib.h>
+//#include <math.h>
+//#define N 5
+//void hap(int a[])
+//{
+//    int sum = 0;
+//    int i;
+//    for (i = 0; i < N; i++) {
+//        scanf("%d", &a[i]);
+//        sum += abs(a[i]);
+//    }
+//    printf("%d", sum);
+//}
+//
+//int main()
+//{
+//
+//    int a[N];
+//    hap(a);
+//    return 0;
+//}
+
+//함수2 형성평가4
+
+//#include <math.h>
+//
+//
+//int main()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    if (num <= 20 && num >= 1)
+//        printf("%.f", pow(2, num));
+//
+//}
+
+//함수 형성평가5
+
+//#include <math.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    double a, b, c;
+//    scanf("%lf %lf %lf", &a, &b, &c);
+//
+//    printf("%.f \n", round((a + b + c) / 3));
+//    printf("%.f \n", round((round(a) + round(b) + round(c)) / 3));
+//
+//}
+
+//함수 형성평가6
+
+//#define N 7
+//#define SWAP(x,y) {int z = x; x=y; y = z;}
+//
+//void input(int a[])
+//{
+//    int i;
+//    for (i = 0; i < N; i++) {
+//        scanf("%d", &a[i]);
+//    }
+//}
+//
+//void sort(int a[])
+//{
+//    int i, j;
+//    for (i = 1; i < 4; i++) {
+//        for (j = 0; j < N - i; j++) {
+//            if (a[j] > a[j + 1]) {
+//                SWAP(a[j], a[j + 1]);
+//            }
+//        }
+//    }
+//}
+//
+//void output(int a[])
+//{
+//    int i;
+//    for (i = 0; i < N; i++) {
+//        printf("%d ", a[i]);
+//    }
+//}
+//
+//int main()
+//{
+//    int arr[N];
+//    input(arr);
+//    sort(arr);
+//    output(arr);
+//    return 0;
+//}
+
+//함수 형성평가 7
+
+//#define PI 3.141592
+//#define AREA (r) * (r) *(PI)
+//
+//int main()
+//{
+//    double r;
+//    printf("radius : ");
+//    scanf("%lf", &r);
+//    printf("area = %.3f", AREA);
+//}
