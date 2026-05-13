@@ -1224,22 +1224,40 @@
 
 //함수2 형성평가2
 
-#include <math.h>
-#include <stdlib.h>
+//#include <math.h>
+//
+//int main()
+//{
+//    double a, b;
+//    int count;
+//    scanf(" %lf %lf", &a, &b);
+//
+//    if (sqrt(a) < sqrt(b)) {
+//        count = floor(sqrt(b)) - ceil(sqrt(a));
+//    }
+//    else {
+//        count = floor(sqrt(a)) - ceil(sqrt(b));
+//    }
+//    printf("%d", count + 1);
+//
+//}
 
-int main()
-{
-    double a, b;
-    double num = 0;
-    scanf("%lf %lf", &a, &b);
-
-    num = round(sqrt(a) - sqrt(b));
-    if (num <= 0) 
-        num *= -1;
-    
-    printf("%.f", num);
-
-}
+//#include <math.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    double a, b;
+//    double num = 0;
+//    scanf("%lf %lf", &a, &b);
+//
+//    num = round(sqrt(a) - sqrt(b));
+//    if (num <= 0) 
+//        num *= -1;
+//    
+//    printf("%.f", num);
+//
+//}
 
 //함수2 형성평가3
 
@@ -1347,4 +1365,258 @@ int main()
 //    printf("radius : ");
 //    scanf("%lf", &r);
 //    printf("area = %.3f", AREA);
+//}
+
+//함수3 자가진단1
+
+//void c(int n)
+//{
+//    if (n < 1) return;
+//    c(n - 1);
+//    printf("recursive \n");
+//}
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    c(N);
+//    return 0;
+//}
+
+//함수3 자가진단2
+
+//void num(int n)
+//{
+//    if (n < 1) return;
+//    printf("%d ", n);
+//    num(n - 1);
+//}
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    num(N);
+//    return 0;
+//}
+
+//함수3 자가진단3
+
+//int hap(int n)
+//{
+//    if (n <= 1) return 1;
+//    return n + hap(n - 1);
+//}
+//
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    printf("%d", hap(N));
+//    return 0;
+//}
+
+//함수3 자가진단4
+
+//#include <math.h>
+//int gop(int n)
+//{
+//    if (n <= 0) return 0;
+//    return gop(n / 10) + pow(n%10,2);
+//}
+//
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    printf("%d", gop(N));
+//    return 0;
+//}
+
+//함수3 자가진단5\
+
+//int N, arr[101];
+//void output()
+//{
+//    int i;
+//    for (i = 1; i <= N; i++) {
+//        printf("%d ", arr[i]);
+//    }
+//    printf("\n");
+//}
+//void dice(int step)
+//{
+//    arr[0] = 1;
+//    int i;
+//    if (step > N) {
+//        output();
+//        return;
+//    }
+//    
+//        for (i = arr[step-1]; i <= 6; i++) {
+//        
+//            arr[step] = i;
+//            dice(step + 1);
+//        }
+//}
+//int main()
+//{
+//    scanf("%d", &N);
+//    dice(1);
+//    return 0;
+//}
+
+//함수3 자가진단6
+
+//int arr[100] = { 0,1 };
+//int fibo(int n)
+//{
+//    if (arr[n] == 0) arr[n] = fibo(n / 2) + fibo(n - 1);
+//    return arr[n];
+//}
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    printf("%d", fibo(N));
+//    return 0;
+//}
+
+//함수3 형성평가1
+
+//void num(int n)
+//{
+//    if (n < 1) return;
+//    num(n / 2);
+//    printf("%d ", n);
+//}
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    num(N);
+//    return 0;
+//}
+
+//함수3 형성평가2
+
+//void num(int n)
+//{
+//    if (n < 1) return;
+//    num(n - 2);
+//    printf("%d ", n);
+//}
+//
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    num(N);
+//    return 0;
+//}
+
+//함수3 형성평가3
+
+//int N, M, arr[101];
+//void output()
+//{
+//    int sum = 0;
+//    int i;
+//    for (i = 1; i <= N; i++)
+//        sum += arr[i];
+//    if (sum == M) {
+//        for (i = 1; i <= N; i++) {
+//            printf("%d ", arr[i]);
+//        }
+//        printf("\n");
+//    }
+//}
+//void dice(int step)
+//{
+//    arr[0] = 1;
+//    int i;
+//    if (step > N) {
+//        output();
+//        return;
+//    }
+//
+//    for (i = 1; i <= 6; i++) {
+//
+//        arr[step] = i;
+//        dice(step + 1);
+//    }
+//}
+//int main()
+//{
+//    scanf("%d %d", &N, &M);
+//    output();
+//    dice(1);
+//    return 0;
+//}
+
+//함수3 형성평가4
+
+//int arr[100] = { 0,1,2 };
+//int fibo(int n)
+//{
+//    if (arr[n] == 0) arr[n] = (fibo(n - 1) * fibo(n - 2)) % 100;
+//    return arr[n];
+//
+//}
+//
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    printf("%d", fibo(N));
+//    return 0;
+//}
+
+//함수3 형성평가5
+
+//int count = 0;
+//void num(int n)
+//{
+//    
+//    if (n % 2 == 0) {
+//        if (n == 1) return;
+//        num(n / 2);
+//        count++;
+//
+//    }
+//    else {
+//        if (n == 1) return;
+//        num(n / 3);
+//        count++;
+//
+//    }
+//
+//}
+//int main()
+//{
+//    int N;
+//    scanf("%d", &N);
+//    num(N);
+//    printf("%d", count);
+//    return 0;
+//}
+
+//함수3 형성평가6
+
+//int gop(int n)
+//{
+//    int num;
+//    num = n % 10;
+//    if (n < 1) return 1; 
+//    if (num == 0) num = 1;
+//    return gop(n / 10) * (num);
+//}
+//
+//int main()
+//{
+//    int gesan = 0;
+//    int N, N2, N3;
+//    scanf("%d %d %d", &N, &N2, &N3);
+//    gesan = N * N2 * N3;
+//    printf("%d", gop(gesan));
+//    return 0;
 //}
