@@ -1620,3 +1620,196 @@
 //    printf("%d", gop(gesan));
 //    return 0;
 //}
+
+//문자열 자가진단1
+
+//int main()
+//{
+//    int n;
+//    while (1) {
+//        printf("ASCII code =? ");
+//        scanf(" %d", &n);
+//        if (n < 33 || n>127) break;
+//        printf("%c \n", n);
+//
+//    }
+//    return 0;
+//}
+
+//문자열 자가진단2
+
+//int main()
+//{
+//    char str[50];
+//    scanf("%s", str);
+//
+//    printf("%s%s", str, str);
+//}
+
+//문자열 자가진단3
+
+//int main()
+//{
+//    int i;
+//    char str[20] = "Hong Gil Dong";
+//    for (i = 3; i < 7; i++) {
+//        printf("%c", str[i]);
+//    }
+//}
+
+//문자열 자가진단4
+
+//#include <string.h>
+//int main()
+//{
+//    int len, i, num;
+//    char str[50];
+//    scanf("%s %d", str, &num);
+//    len = strlen(str);
+//
+//    if (num > len) num = len;
+//    for (i = len - 1; i >= num-1; i--) {
+//        printf("%c", str[i]);
+//     }
+//}
+
+//문자열 자가진단5
+
+//#include <string.h>
+//
+//int main()
+//{
+//    int len, len2;
+//    char str[50];
+//    char str2[50];
+//
+//    scanf(" %s %s", str, str2);
+//    len = strlen(str);
+//    len2 = strlen(str2);
+//
+//    printf("%d", len + len2);
+//}
+
+//문자열 자가진단6
+
+//#include <ctype.h>
+//int main()
+//{
+//    char ch;
+//    while (1) {
+//        ch = getchar();
+//        getchar();
+//        if (isalpha(ch)) {
+//            printf("%c \n", ch);
+//        }
+//        else if (isdigit(ch)) {
+//            printf("%d \n", ch);
+//        }
+//        else if (!isalnum(ch)) break;
+//      
+//    }
+//    return 0;
+//}
+
+//문자열 자가진단7
+
+//#include <string.h>
+//#include <ctype.h>
+//int main()
+//{
+//    int i, len;
+//    char st[101];
+//    scanf("%s", st);
+//    len = strlen(st);
+//    for (i = 0; i < len; i++) {
+//        if (isalpha(st[i])) {
+//            printf("%c", toupper(st[i]));
+//           
+//        }
+//        
+//    }
+//    return 0;
+//}
+
+//문자열 자가진단8
+
+//#include <string.h>
+//
+//int main()
+//{
+//    int i, len;
+//    char str[101];
+//    int count = 0;
+//
+//    fgets(str, 101, stdin);
+//    len = strlen(str);
+//    for (i = 0; i < len; i++) {
+//        if (str[i] == ' ')
+//            count++;
+//    }
+//    printf("%d", count + 1);
+//}
+
+//문자열 자가진단9
+
+//#include <string.h>
+//int main()
+//{
+//    int i, j, len;
+//    char word[50], tmp;
+//    scanf("%s", word);
+//    len = strlen(word);
+//    for (i = 0; i < len; i++) {
+//        tmp = word[len-1];
+//        for (j = len -1; j >0; j--) {
+//            word[j] = word[j - 1];
+//        }
+//        word[0] = tmp;
+//        printf("%s \n", word);
+//    }
+//    return 0;
+//}
+
+//문자열 형성평가1
+
+//#include <math.h>
+//
+//int main()
+//{
+//    char c, c2;
+//    scanf(" %c %c", &c, &c2);
+//
+//    printf("%d %d", abs(c + c2), abs(c - c2));
+//}
+
+//문자열 형성평가2
+
+//int main()
+//{
+//    char str[97];
+//    int i;
+//    scanf("%s", str);
+//    for (i = 0; i < 5; i++) {
+//        printf("%c", str[i]);
+//
+//    }
+//}
+
+//문자열 형성평가3
+
+#include <ctype.h>
+#include <string.h>
+int main()
+{
+    int i, len;
+    char str[102];
+    scanf("%s", str);
+    len = strlen(str);
+    for (i = 0; i < len; i++) {
+        if (isalnum(str[i]))
+            str[i] = tolower(str[i]);
+        else str[i] = 0;
+
+    }
+    printf("%s", str);
+}
